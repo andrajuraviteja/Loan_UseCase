@@ -1,0 +1,6 @@
+transaction_id,application_id,transaction_amount,transaction_type,flag_reference
+TX001,LA001,12000,CREDIT,Normal
+TX002,LA002,95000,DEBIT,Review
+TX003,LA003,18000,CREDIT,Normal
+TX004,LA004,250000,DEBIT,Review
+TX005,LA005,15000,CREDIT,Normal

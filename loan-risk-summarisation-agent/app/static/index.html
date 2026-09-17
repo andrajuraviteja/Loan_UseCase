@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Risk Summarisation Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Loan Risk Summarisation & Risk Flag Agent</h1>
+      <p>FastAPI document intelligence demo for microfinance loan applications</p>
+    </div>
+    <div class="status">FastAPI</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">BFSI DOCUMENT AI</span>
+        <h2>Turn a loan application PDF into an officer-ready brief.</h2>
+        <p>
+          Upload a synthetic or real loan application PDF. The system extracts key
+          fields, checks simple risk signals and generates a concise summary.
+        </p>
+      </div>
+      <div class="hero-card">
+        <strong>Pipeline</strong>
+        <div>PDF → Extraction → Risk Analysis → Summary → Structured Brief</div>
+      </div>
+    </section>
+
+    <section class="upload-card">
+      <h3>Evaluate Loan Application</h3>
+      <form id="uploadForm">
+        <label for="file">Loan application PDF</label>
+        <input id="file" name="file" type="file" accept=".pdf" required>
+        <button type="submit">Evaluate Application</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section id="result" class="result hidden">
+      <div class="result-header">
+        <div>
+          <span class="eyebrow">EVALUATION RESULT</span>
+          <h3 id="filename">-</h3>
+        </div>
+        <div id="riskBadge" class="risk-badge">-</div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric"><span>Risk Score</span><strong id="riskScore">-</strong></div>
+        <div class="metric"><span>Applicant</span><strong id="applicant">-</strong></div>
+        <div class="metric"><span>Loan Amount</span><strong id="loanAmount">-</strong></div>
+        <div class="metric"><span>Monthly Income</span><strong id="income">-</strong></div>
+      </div>
+
+      <div class="grid">
+        <div class="panel">
+          <h4>Officer Summary</h4>
+          <p id="summary"></p>
+        </div>
+        <div class="panel">
+          <h4>Risk Flags</h4>
+          <ul id="flags"></ul>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h4>Extracted Fields</h4>
+        <div id="fields" class="fields"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

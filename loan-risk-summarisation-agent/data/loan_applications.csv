@@ -1,0 +1,6 @@
+application_id,applicant_name,monthly_income,loan_amount,loan_purpose,risk_reference
+LA001,Anita Rao,32000,250000,Dairy business,Low
+LA002,Ramesh Kumar,22000,500000,Small retail shop,Medium
+LA003,Sita Devi,18000,450000,Home improvement,Medium
+LA004,Manoj Naidu,15000,600000,Crypto investment,High
+LA005,Lakshmi Bai,28000,300000,Tailoring business,Low

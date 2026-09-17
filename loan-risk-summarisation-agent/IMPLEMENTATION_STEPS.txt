@@ -1,0 +1,22 @@
+NEXT STEPS
+
+1. Copy/extract this folder to your project directory.
+2. Open PowerShell in this folder.
+3. Create environment:
+   python -m venv .venv
+4. Activate:
+   .\.venv\Scripts\Activate.ps1
+5. Install:
+   pip install -r requirements.txt
+6. Optional: copy .env.example to .env and add GROQ_API_KEY.
+7. Run:
+   uvicorn app.main:app --reload
+8. Open:
+   http://127.0.0.1:8000
+9. Upload:
+   data\synthetic_pdfs\loan_application_01.pdf
+
+For Bitbucket:
+   git add .
+   git commit -m "Add FastAPI loan risk summarisation agent"
+   git push
